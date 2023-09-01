@@ -1,0 +1,12 @@
+ul,h1,li{
+display: inline;
+background-color: black;
+color: white;
+}
+ul{
+    padding-left: 40%;
+}
+nav{
+    background-color: black;
+    padding-left: 5%;
+}
