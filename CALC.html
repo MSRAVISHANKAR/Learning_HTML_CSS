@@ -1,25 +1,50 @@
 <link rel="stylesheet" href="testingstyle.css">
-<div style="padding: 20px;">
+<!-- <div style="padding: 20px;">
     <button onclick="console.log(`Cart Quantity: ${Quantity}`); ">Show Quantity</button>
     <button onclick="Quantity++ ;console.log(`ADDED to Cart: ${Quantity+1}`);">Add to Cart</button>
     <button onclick="Quantity += 1 ; console.log(`ADDED to Cart: ${Quantity+1}`);">+1</button>
     <button onclick="Quantity += 2 ; console.log(`ADDED to Cart: ${Quantity+2}`);">+2</button>
-    <button onclick="Quantity=0 ;console.log(`RESETED Cart: ${Quantity}`);">Reset Cart</button>
-</div>
+    <button onclick="Quantity = 0 ;console.log(`RESETED Cart: ${Quantity}`);">Reset Cart</button>
+</div> -->
 
-<h2> CALC </h2> <br>
-<div>
-    <form class="calcbody">
-        <button> Enter Value1</button>
+<h2> CALCULATOR </h2> <br>
+<div class="calcbody">
+        <!-- <button> Enter Value1</button>
         <input type="number">
         <button> Enter Value2</button>
-        <input type="number">
+        <input type="number"> -->
+        <input type="button"  value="1" onclick=" clickNumbers(1);">
+        <input type="button"  value="2" onclick=" clickNumbers(2);">
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+        <button>0</button>
         <button>+</button>
-        <button>*</button>
+        <input type="button"  value="+" onclick=" addNumbers(1,2);">
         <button>/</button>
         <button>=</button>
-    </form>
-</div>
+       </div>
+       <p1 class="p1" id="Para1"> </p1> 
 <script>
-    let Quantity = 0;
+    // let Quantity = 0;
+    const paragraph = document.getElementById('Para1');
+    
+    function clickNumbers(Num)
+    {
+        console.log(Num);
+        paragraph.innerHTML = Num;
+    }
+    function addNumbers(clickNumbers1,clickNumbers2)
+    {
+        
+        addedNum = clickNumbers1+clickNumbers2;
+        paragraph.innerHTML = addedNum;
+
+    }
+    
 </script>

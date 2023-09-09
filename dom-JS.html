@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="dom-js.css">
+
+<head>
+    <title>DOM PROJECT</title>
+</head>
+
+<body class="bodystyle">
+    <p>YouTube Subscribe Button</p>
+
+    <button onclick=" Subscribe();
+    " class="js-sub-btn btnstyle">Subscribe</button>
+
+    <p>Amazon Shipping Calculator</p>
+    
+    <p>Order under $40 = +$10 shipping.</p>
+    <p>Order under $40 = FREE shipping.</p>
+    
+    <input class="inValue" placeholder="Cost of order" onkeydown="handleCase(event);">
+    
+    <button class="clcikbtn" onclick="shpCalc(); ">Calculate</button>
+    <p class="cost-prod"></p>
+
+    <script>
+        
+        function handleCase(event) {
+            if (event.key === 'Enter') {
+                shpCalc();
+            }
+        }
+        function shpCalc() {
+            
+            const inpEle = document.querySelector('.inValue');
+            if (inpEle.value === '')
+            {
+                document.querySelector('.cost-prod').innerHTML = `Please enter any value`;
+            }
+            else{
+            let cost = Number(inpEle.value);
+                if (cost < 40) {
+                cost = cost + 10;
+            }
+
+           document.querySelector('.cost-prod').innerHTML = `Total Cost:$ ${cost}`;
+        }
+        }
+        function Subscribe() {
+            const btnEle = document.querySelector('.js-sub-btn');
+
+            if (btnEle.innerHTML === 'Subscribe') {
+                btnEle.innerHTML = 'Subscribed';
+                btnEle.classList.add('is-subscribe')
+            } else {
+                btnEle.innerHTML = 'Subscribe';
+                btnEle.classList.remove('is-subscribe')
+            }
+        }
+
+    </script>
+</body>
+
+</html>

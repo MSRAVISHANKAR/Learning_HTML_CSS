@@ -1,0 +1,27 @@
+
+.btnstyle{
+    border: none;
+    background-color: black;
+    color: antiquewhite;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;    
+}
+.bodystyle{
+    font-family: Arial;
+}
+
+.is-subscribe{
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+.clcikbtn{
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;    
+}
