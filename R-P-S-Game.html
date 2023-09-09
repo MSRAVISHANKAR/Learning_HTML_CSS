@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="testingstyle.css" >
+<head>
+<link rel="icon" href="Dice.png">
+<title >The Game </title>
+    
+</head>
+<h2> ROCK PPR SCI </h2> <br>
+<body>
+    <div class="calcbody">
+        <button 
+        onclick=" const randNum = Math.random() ;
+        let computerMove = ''
+        if(randNum >= 0 && randNum < 1/3 )
+        {
+         computerMove = 'ROCK';   
+        } 
+        else if(randNum >= 1/3 && randNum < 2/3 )
+        {
+         computerMove = 'PAPER';  
+        }
+        else if(randNum >= 2/3 && randNum < 1 )
+        {
+         computerMove = 'SCISSORS';   
+        }
+       result = '';
+        if(computerMove === 'ROCK'){
+            result = 'Its a Tie';
+            // console.log('It\'s a tie');
+        }
+        else if(computerMove === 'PAPER'){
+            result = 'You loose';
+            // console.log('It\'s a Loss');
+        }
+        else if(computerMove === 'SCISSORS'){
+            result = 'You Won';
+            // console.log('It\'s a Win');
+        }
+        alert(`${result}, You chose : ROCK & Computer had chose: ${computerMove} `);  
+        ">ROCK</button>
+    <button onclick=" const randNum1 = Math.random() ;
+        let computerMove1 = ''
+        if(randNum1 >= 0 && randNum1 < 1/3 )
+        {
+         computerMove1 = 'ROCK';   
+        } 
+        else if(randNum1 >= 1/3 && randNum1 < 2/3 )
+        {
+         computerMove1 = 'PAPER';  
+        }
+        else if(randNum1 >= 2/3 && randNum1 < 1 )
+        {
+         computerMove1 = 'SCISSORS';   
+        }
+       result1 = '';
+        if(computerMove1 === 'ROCK'){
+            result1 = 'You Won !';
+            // console.log('It\'s a tie');
+        }
+        else if(computerMove1 === 'PAPER'){
+            result1 = 'Its a Tie';
+            // console.log('It\'s a Loss');
+        }
+        else if(computerMove1 === 'SCISSORS'){
+            result1 = 'You loose';
+            // console.log('It\'s a Win');
+        }
+        alert(`${result1}, You chose : PAPER & Computer had chose: ${computerMove1} `);  
+        ">PAPER</button>
+        <button onclick=" const randNum2 = Math.random() ;
+        let computerMove2 = ''
+        if(randNum2 >= 0 && randNum2 < 1/3 )
+        {
+         computerMove2 = 'ROCK';   
+        } 
+        else if(randNum2 >= 1/3 && randNum2 < 2/3 )
+        {
+         computerMove2 = 'PAPER';  
+        }
+        else if(randNum2 >= 2/3 && randNum2 < 1 )
+        {
+         computerMove2 = 'SCISSORS';   
+        }
+       result2 = '';
+        if(computerMove2 === 'ROCK'){
+            result2 = 'You loose ';
+            // console.log('It\'s a tie');
+        }
+        else if(computerMove2 === 'PAPER'){
+            result2 = 'You Won ! ';
+            // console.log('It\'s a Loss');
+        }
+        else if(computerMove2 === 'SCISSORS'){
+            result2 = 'Its a Tie';
+            // console.log('It\'s a Win');
+        }
+        alert(`${result2}, You chose : SCISSORS & Computer had chose: ${computerMove2} `);
+        ">SCISSORS</button>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>

@@ -1,12 +1,33 @@
 ul,h1,li{
 display: inline;
-background-color: black;
-color: white;
+/* background-color: grey; */
+color: black;
 }
 ul{
     padding-left: 40%;
 }
 nav{
-    background-color: black;
+    
+    background-color: violet;
     padding-left: 5%;
+    color: black;
+}
+.onBut,h2{
+    padding: 20px;
+    }
+
+.onBut:hover{
+    background-color: aqua;
+}
+.calcbody{
+    display: inline;
+    background-color: blueviolet; 
+    padding-block: 20px;
+    border: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    
 }
